@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="formcss.css" />
+		<main>
+		</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+		</script>
+		<title>
+		Ankieta
+		</title>
+	</head>
+	<body>
+	<a href="technologia.html"><input type="button" value="Powrót"/></a><br><br>
+	<form action="#">
+			<p>Jakiego systemu używasz?</p>
+			
+				<input list="system" name="system">
+					<datalist id="system">
+						<option value="Windows 10">
+						</option><option value="Windows 8">
+						</option><option value="Windows 7">
+						</option><option value="Windows Vista">
+						</option><option value="Windows XP">
+						</option><option value="Windows 98">
+						</option><option value="Windows 95">
+						</option><option value="Ubuntu">
+						</option><option value="Fedora">
+						</option><option value="Red Hat">
+						</option><option value="Mint">
+						</option><option value="OpenSUSE">
+						</option><option value="Debian">
+						</option><option value="MAC OS X">
+						</option><option value="MAC OS 9">
+						</option><option value="MAC OS 8">
+						</option>
+					</datalist><br><br>
+					
+			<p>Jakiej przeglądarki używasz?</p>
+				<label class="container">
+				 <input type="checkbox" />Google Chrome
+				<span class="checkmark"></span>
+					</label>
+				<label class="container">
+				<input type="checkbox" />Safari NET
+				<span class="checkmark"></span>
+					</label>
+				<label class="container">
+				<input type="checkbox" />Opera
+				<span class="checkmark"></span>
+					</label>
+				<label class="container">
+				<input type="checkbox" />Mozilla Firefox
+				<span class="checkmark"></span>
+					</label>
+				<label class="container">
+				<input type="checkbox" />Internet Exploler
+				<span class="checkmark"></span>
+				</label>
+				<label class="container">
+				<input type="checkbox" />Windows EDGE
+				<span class="checkmark"></span>
+				</label>
+				<br><br>
+			<p>Jaką lubisz konsolę?</p>
+				
+				<label class="container">Playstation 4
+				  <input type="radio"  name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Playstation 3
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Xbox One
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Xbox 360
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Nintendo Switch
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Nintendo WII U
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+
+				<br>
+				<p>Jaką lubisz grę komputerową?</p>
+				<input list="gry" name="gry">
+					<datalist id="gry">
+						<option value="Minecraft">
+						</option><option value="Counter Strike : Global Offensive">
+						</option><option value="League Of Legends">
+						</option><option value="Rocket League">
+						</option><option value="Grand Theft Auto V">
+						</option><option value="Paladins">
+						</option><option value="Fortnite">
+						</option><option value="H1Z1">
+						</option><option value="PUBG">
+						</option><option value="Pokken Tournament DX">
+						</option><option value="Super Mario Odyssey">
+						</option><option value="Mario Kart 8 Deluxe">
+						</option>
+					</datalist><br><br>
+					<textarea name="wiadomosc" rows="10" cols="60">Dodaj tutaj swój komentarz</textarea><br><br>
+				<input name="button2" type="reset" onClick="" value="Reset ankiety">
+				<input type="button" onclick="$(this).next().toggleClass('Pojaw')" value="Rozwiń mnie!">
+				
+						<pre class="Pojaw">	
+						Żart:
+						- W zeszłym miesiącu kupiłem żonie kolczyki z diamentami i od tego czasu się do mnie nie odzywa. 
+						- Dlaczego? 
+						- Taka była umowa.
+						</pre>
+					<input type="button" onclick="$(this).next().toggleClass('Autor')" value="Autorzy">
+						<pre class="Autor">	
+						Wykonali:
+						Dawid Andrzejczak
+						Wojciech Wilczewski
+						Klasa IIeT
+						</pre>
+	
+				
+	</form>
+	</body>
+</html>

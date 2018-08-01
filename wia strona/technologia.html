@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css.css" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<meta charset="utf-8">
+		<meta http-equiv="Refresh" content="1000000" />
+		<main>
+		</main>
+		<script>
+		
+		function odliczanie()
+			{
+				var dzisiaj = new Date();
+				
+				var dzien = dzisiaj.getDate();
+				var miesiac = dzisiaj.getMonth()+1;
+				var rok = dzisiaj.getFullYear();
+				
+				var godzina = dzisiaj.getHours();
+				if(godzina<10) godzina = "0"+godzina
+				var minuta = dzisiaj.getMinutes();
+				if(minuta<10) minuta = "0"+minuta
+				var sekunda = dzisiaj.getSeconds();
+				if(sekunda<10) sekunda = "0"+sekunda
+				
+				document.getElementById("zegar").innerHTML =  dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuta+":"+sekunda;
+				 
+				 setTimeout("odliczanie()",1000);
+			}
+		</script>
+		<title>
+		E-Sport
+		</title>
+	</head>
+	<body onload="odliczanie()" >
+		<h1 align="center">E-Sport</h1>
+		<div id="linki"><p></p>
+		<a href="ankieta.html"> <input type="button" value="Ankieta" id="button"/></a>
+		<a href="podstrona.html"> <input type="button" value="Gry" id="button"/></a>
+		<a href="szubienica.html"> <input type="button" value="Minigra" id="button"/></a>
+		<a href="Wyniki.html"> <input type="button" value="Wyniki" id="button"/></a>
+		<br>
+        <div id="zegar"></div>		
+		<p>Aktualności:</p><br>
+		
+		<fieldset><legend>FarCry5:</legend>
+		Piąta pełnoprawna część popularnej serii FPS-ów. Tym razem gracze trafiają do amerykańskiego stanu Montana,
+		gdzie stawiają opór rządom bezwzględnych fanatyków religijnych. Rozgrywka opiera się na eksploracji, 
+		wykonywaniu zadań fabularnych i misji pobocznych oraz na walce z przeciwnikami. W miarę czynionych postępów 
+		otrzymujemy dostęp do coraz potężniejszego arsenału. Całość cieszy oczy za sprawą wysokiej jakości oprawy graficznej.
+		</fieldset>
+		<br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/VJkws8MiZGI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<fieldset><legend>God Of War</legend>
+		Kolejna odsłona legendarnej serii slasherów God of War, tym razem przygotowana z myślą o konsoli PlayStation 4.
+		Bohaterem tytułu ponownie jest Kratos, który walczy z bóstwami i dzikimi bestiami, wyciągniętymi wprost z mitologii nordyckiej.
+		</fieldset>
+		<br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/K0u_kAWLJOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</body>
+</html>
